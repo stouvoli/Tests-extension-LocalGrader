@@ -3,8 +3,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class FeedbackTest { // LA CLASSE EST BIEN LÀ
     @Test
-    public void testDivision() {
-        int res = 10 / 0; 
-        assertEquals(res, 0);
-    }
+    void testCalcul() { assertEquals(10, 5 + 5); }
+    
+    @Test
+    void testErreur() { fail("Ceci est un test d'affichage"); }
 }
