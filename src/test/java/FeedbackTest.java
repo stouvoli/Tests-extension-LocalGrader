@@ -1,9 +1,8 @@
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FeedbackTest {
-    @Test
-    public void testTrivial() {
-        assertEquals(10, 10);
-    }
+@Test
+public void testDivision() {
+    int res = 10 / 0; 
+    assertEquals(res, 0);
 }
